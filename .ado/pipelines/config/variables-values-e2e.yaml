@@ -1,28 +1,28 @@
 # Central configuration settings
-# used for E2E environment pipelines
+# used for E2E environment pipelines - test
 variables:
 
 # Resource prefix for this environment
 - name:  'prefix'
-  value: 'mcce2e'          # <===== CHANGE THIS! Must not be longer than 6 characters! Needs to be a unique prefix
+  value: 'ldee2e'          # <===== CHANGE THIS! Must not be longer than 6 characters! Needs to be a unique prefix
 
 # The first value in 'stampLocations' is the primary region used for global services.
 # IMPORTANT! Changing the primary region (first value) is a BREAKING change and will destroy CosmosDB and Front Door.
 - name: 'stampLocations'
-  value: '["uksouth"]'    # Check which regions are valid. There is a list in /src/infra/README.md
+  value: '["northeurope","uksouth"]'    # Check which regions are valid. There is a list in /src/infra/README.md
 
 # Terraform state variables
 - name:  'terraformResourceGroup'
-  value: 'mcconnected-terraformstate-rg'      # <===== CHANGE THIS VALUE IF NEEDED
+  value: 'ldeconnected-tf-rg'      # <===== CHANGE THIS VALUE IF NEEDED
 - name:  'terraformStorageAccount'
-  value: '$(prefix)tfstatestore'              # <===== CHANGE THIS VALUE! Needs to be a globally unique name
+  value: '$(prefix)tfstate'              # <===== CHANGE THIS VALUE! Needs to be a globally unique name
 
 # Other settings
 - name:  'contactEmail'
-  value: 'noreply@microsoft.com'  # <===== CHANGE THIS VALUE TO ONE OF YOUR REAL EMAIL ADDRESSES (OR A GROUP)!
+  value: 'chris@lde.bezencon.net'  # <===== CHANGE THIS VALUE TO ONE OF YOUR REAL EMAIL ADDRESSES (OR A GROUP)!
 
   # Custom DNS name settings
 - name: 'envDnsZoneRG'
-  value: 'mc-dnszones-rg'                         # <===== CHANGE THIS VALUE
+  value: 'rg-mccdns'                         # <===== CHANGE THIS VALUE
 - name: 'envDomainName'
-  value: 'e2e.connected.mission-critical.app'     # <===== CHANGE THIS VALUE
+  value: 'mcce2e.bezencon.net'     # <===== CHANGE THIS VALUE

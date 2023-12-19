@@ -1,0 +1,14 @@
+{
+    "northeurope":[
+        "/subscriptions/65a2fddb-c61b-4be6-b286-360915c0f1fe/resourceGroups/rg-vnet-dev-lz04-northeurope-01/providers/Microsoft.Network/virtualNetworks/vnet-dev-lz04-northeurope-01",
+        "/subscriptions/65a2fddb-c61b-4be6-b286-360915c0f1fe/resourceGroups/rg-vnet-dev-lz04-northeurope-02/providers/Microsoft.Network/virtualNetworks/vnet-dev-lz04-northeurope-02"
+    ],
+    "uksouth":[
+        "/subscriptions/65a2fddb-c61b-4be6-b286-360915c0f1fe/resourceGroups/rg-vnet-dev-lz04-uksouth-01/providers/Microsoft.Network/virtualNetworks/vnet-dev-lz04-uksouth-01",
+        "/subscriptions/65a2fddb-c61b-4be6-b286-360915c0f1fe/resourceGroups/rg-vnet-dev-lz04-uksouth-02/providers/Microsoft.Network/virtualNetworks/vnet-dev-lz04-uksouth-02"
+    ],
+    "swedencentral":[
+        "/subscriptions/65a2fddb-c61b-4be6-b286-360915c0f1fe/resourceGroups/rg-vnet-dev-lz04-swedencentral-01/providers/Microsoft.Network/virtualNetworks/vnet-dev-lz04-swedencentral-01",
+        "/subscriptions/65a2fddb-c61b-4be6-b286-360915c0f1fe/resourceGroups/rg-vnet-dev-lz04-swedencentral-02/providers/Microsoft.Network/virtualNetworks/vnet-dev-lz04-swedencentral-02"
+    ]
+}
